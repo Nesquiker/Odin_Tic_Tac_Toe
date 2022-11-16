@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Light", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    align-self: center;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template: 100px 1fr / 1fr;
+    background-color: black;
+}
+
+.header_container {
+    display: grid;
+    grid-template: 60px 40px / 1fr;
+    background-color: midnightblue;
+    color: antiquewhite;
+    box-sizing: border-box;
+}
+
+.score_board {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.score_board * {
+    flex: auto;
+}
+
+.score_board > button {
+    background-color: dodgerblue;
+    font-size: 16px;
+    font-weight: bolder;
+    color: whitesmoke;
+    border-radius: 8px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.player_group, .computer_group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player_group > *, .computer_group > * {
+    flex: auto;
+}
+
+.board_container {
+    display: flex;
+}
+
+.game_container {
+    flex: 1;
+    display: grid;
+    grid-template: repeat(3, minmax(80px, 1fr)) / repeat(3, minmax(80px, 1fr));
+}
+
+.play_grid {
+    font-size: 20vw;
+    font-weight: bolder;
+    color: whitesmoke;
+    border: 5px solid dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vw;
+}
+
+.start_menu > * {
+    flex: auto;
+
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.start_menu > h1 {
+    color: whitesmoke;
+    font-size: 5vw;
+    padding: 20px;
+    height: 7vw;
+}
+
+.button_container > button {
+    border: 3px solid dodgerblue;
+    border-radius: 12px;
+    font-size: 10vw;
+    padding: 20px;
+    color: whitesmoke;
+    font-weight: bolder;
+    background-color: midnightblue;
+    height: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
